@@ -5,10 +5,10 @@ html(lang='en')
 
         meta(charset='utf-8')
         meta(name='viewport', content='width=device-width, initial-scale=1, shrink-to-fit=no')
-        meta(name='description', content='Stjärnholm Medical AB är ett företag med läkarkompetens inom barn- och ungdomsmedicin, skolhälsovård, företagshälsovård, dykmedicin och infektionsmedicin.')
+        meta(name='description', content='Små Hopp är ditt nya alternativ för barnomsorg i Boden. Våra anställda är alla erfarna och omtyckta dagmammor som tidigare arbetat i kommunal regi. De anställs nu av Små Hopp i Boden, som ägs av Stjärnholm Medical AB.')
         meta(name='author', content='')
 
-        title Stjärnholm Medical AB
+        title Små Hopp - Dagbarnvård i hemmet
 
         // Favicon
         link(rel='icon', type='image/x-icon', href='assets/favicon.ico')
@@ -30,9 +30,9 @@ html(lang='en')
         // Navigation
         nav.navbar.navbar-light.bg-light.static-top
             .container
-                a.navbar-brand(href='') Stjärnholm Medical AB
-                //- a.navbar-brand(href='') 
-                //-     img(src="assets/img/logo_500x58.jpg" alt="Stjärnholm Medical AB" height=30)
+                //- a.navbar-brand(href='') Små Hopp - Dagbarnvård i hemmet
+                a.navbar-brand(href='') 
+                    img(src="assets/img/homepage/smahopp_logo.png" alt="Små Hopp" height="50" )
                 //- a.btn.btn-primary(href='#signup') Kontakta oss 
                 a.btn.btn-primary(data-target='#ContactUsModal' data-toggle='modal' href='#ContactUs' data-bs-toggle='modal' data-bs-target='#ContactUsModal') Kontakta oss
 
@@ -43,7 +43,7 @@ html(lang='en')
                     .col-xl-6
                         .text-center.text-white
                             // Page heading
-                            h3.mb-5 Stjärnholm Medical AB är ett företag med läkarkompetens inom barn- och ungdomsmedicin, skolhälsovård, företagshälsovård, dykmedicin, flygmedicin och infektionsmedicin.
+                            h3.mb-5 Små Hopp är ditt nya alternativ för barnomsorg i Boden. Våra anställda är alla erfarna och omtyckta dagmammor som tidigare arbetat i kommunal regi. De anställs nu av Små Hopp i Boden, som ägs av Stjärnholm Medical AB.
 
         // Infotext
         section.features-icons.text-center
@@ -145,16 +145,66 @@ html(lang='en')
         include people
 
         // Call to Action
-        section#signup.call-to-action.text-white.text-center
-            .container.position-relative
-                .row.justify-content-center
-                    .col-xl-6
-                        h2.mb-4 Vi är stolta sponsorer av
-                        ul(style='list-style: none;').mb-2
-                            li Sävast AIF ungdomsfotboll
-                            li Bodens Ridklubb
-                            li BBK-Sim
-                        
+        //- section#signup.call-to-action.text-white.text-center
+        //-     .container.position-relative
+        //-         .row.justify-content-center
+        //-             .col-xl-6
+        //-                 h2.mb-4 Vi är stolta sponsorer av
+        //-                 ul(style='list-style: none;').mb-2
+        //-                     li Sävast AIF ungdomsfotboll
+        //-                     li Bodens Ridklubb
+        //-                     li BBK-Sim
+        //- #carouselExampleIndicators.carousel.slide(data-ride='carousel')
+        //-     ol.carousel-indicators
+        //-         li.active(data-target='#carouselExampleIndicators' data-slide-to='0')
+        //-         li(data-target='#carouselExampleIndicators' data-slide-to='1')
+        //-         li(data-target='#carouselExampleIndicators' data-slide-to='2')
+        //-     .carousel-inner
+        //-         .carousel-item.active(data-mdb-interval="1000")
+        //-             img.d-block.w-100(src='assets/img/homepage/timthumb1.jpeg' alt='First slide')
+        //-         .carousel-item(data-mdb-interval="1000")
+        //-             img.d-block.w-100(src='assets/img/homepage/timthumb2.jpeg' alt='Second slide')
+        //-         .carousel-item(data-mdb-interval="1000")
+        //-             img.d-block.w-100(src='assets/img/homepage/timthumb3.jpeg' alt='Third slide')
+        //-         .carousel-item(data-mdb-interval="1000")
+        //-             img.d-block.w-100(src='assets/img/homepage/timthumb4.jpeg' alt='Fourth slide')
+        //-     a.carousel-control-prev(href='#carouselExampleIndicators' role='button' data-slide='prev')
+        //-         span.carousel-control-prev-icon(aria-hidden='true')
+        //-         span.sr-only Previous
+        //-     a.carousel-control-next(href='#carouselExampleIndicators' role='button' data-slide='next')
+        //-         span.carousel-control-next-icon(aria-hidden='true')
+        //-         span.sr-only Next
+                
+        //- #carouselExampleInterval.carousel.slide(data-mdb-ride='carousel')
+        //-     .carousel-inner
+        //-         .carousel-item.active(data-mdb-interval='2000')
+        //-             img.d-block.w-100(src='assets/img/homepage/timthumb1.jpeg' alt='Wild Landscape')
+        //-         .carousel-item(data-mdb-interval='2000')
+        //-             img.d-block.w-100(src='assets/img/homepage/timthumb2.jpeg' alt='Camera')
+        //-         .carousel-item
+        //-             img.d-block.w-100(src='assets/img/homepage/timthumb3.jpeg' alt='Exotic Fruits')
+        //-         .carousel-item
+        //-             img.d-block.w-100(src='assets/img/homepage/timthumb4.jpeg' alt='Exotic Fruits')
+        //-     button.carousel-control-prev(data-mdb-target='#carouselExampleInterval' type='button' data-mdb-slide='prev')
+        //-         span.carousel-control-prev-icon(aria-hidden='true')
+        //-         span.visually-hidden Previous
+        //-     button.carousel-control-next(data-mdb-target='#carouselExampleInterval' type='button' data-mdb-slide='next')
+        //-         span.carousel-control-next-icon(aria-hidden='true')
+        //-         span.visually-hidden Next
+
+        #carouselExampleSlidesOnly.carousel.slide.carousel-fade(data-bs-ride='carousel')
+            .carousel-inner
+                .carousel-item.active(data-mdb-interval='1000')
+                    img.d-block.w-100(src='assets/img/homepage/timthumb1.jpeg' alt='...')
+                .carousel-item(data-mdb-interval='1000')
+                    img.d-block.w-100(src='assets/img/homepage/timthumb2.jpeg' alt='...')
+                .carousel-item(data-mdb-interval='1000')
+                    img.d-block.w-100(src='assets/img/homepage/timthumb3.jpeg' alt='...')
+                .carousel-item(data-mdb-interval='1000')
+                    img.d-block.w-100(src='assets/img/homepage/timthumb4.jpeg' alt='...')
+
+
+                    
         // Footer
         include footer
         
