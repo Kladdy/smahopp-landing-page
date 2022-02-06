@@ -11286,6 +11286,14 @@ textarea.form-control-lg {
     display: none !important;
   }
 }
+.smab-link a {
+  color: inherit;
+}
+.smab-link a:hover {
+  color: #dddddd;
+  cursor: pointer;
+}
+
 .features-icons {
   padding-top: 7rem;
   padding-bottom: 7rem;
