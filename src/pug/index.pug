@@ -28,13 +28,49 @@ html(lang='sv')
     body
 
         // Navigation
+        //- nav.navbar.navbar-light.bg-light.static-top
+        //-     .container
+        //-         //- a.navbar-brand(href='') Små Hopp - Dagbarnvård i hemmet
+        //-         a.navbar-brand(href='') 
+        //-             img(src="assets/img/homepage/smahopp_logo.png" alt="Små Hopp" height="50" )
+        //-         //- a.btn.btn-primary(href='#signup') Kontakta oss 
+        //-         a.btn.btn-primary(data-target='#ContactUsModal' data-toggle='modal' href='#ContactUs' data-bs-toggle='modal' data-bs-target='#ContactUsModal') Kontakta oss
+        //-         a.btn.btn-primary(data-target='#DocumentsModal' data-toggle='modal' href='#Documents' data-bs-toggle='modal' data-bs-target='#DocumentsModal') Dokument
+
+        //- nav.navbar.navbar-light.bg-light.static-top
+        //-     .container
+        //-         .d-flex.justify-content-between.align-items-center
+        //-             //- Logo on the left side
+        //-             a.navbar-brand(href='')
+        //-                 img(src="assets/img/homepage/smahopp_logo.png" alt="Små Hopp" height="50")
+
+        //-             //- Buttons on the right side
+        //-             .d-flex
+        //-                 a.btn.btn-primary(data-target='#ContactUsModal' data-toggle='modal' href='#ContactUs' data-bs-toggle='modal' data-bs-target='#ContactUsModal') Kontakta oss
+        //-                 a.btn.btn-primary(data-target='#DocumentsModal' data-toggle='modal' href='#Documents' data-bs-toggle='modal' data-bs-target='#DocumentsModal') Dokument
+
+        //- nav.navbar.navbar-light.bg-light.static-top
+        //-     .container
+        //-         .row.align-items-center
+        //-             //- Logo column on the left
+        //-             .col-md-6
+        //-                 a.navbar-brand(href='')
+        //-                     img(src="assets/img/homepage/smahopp_logo.png" alt="Små Hopp" height="50")
+
+        //-             //- Buttons column on the right
+        //-             .col-md-6.text-right
+        //-                 a.btn.btn-primary(data-target='#ContactUsModal' data-toggle='modal' href='#ContactUs' data-bs-toggle='modal' data-bs-target='#ContactUsModal') Kontakta oss
+        //-                 a.btn.btn-primary(data-target='#DocumentsModal' data-toggle='modal' href='#Documents' data-bs-toggle='modal' data-bs-target='#DocumentsModal') Dokument
+
+        // Navigation
         nav.navbar.navbar-light.bg-light.static-top
             .container
-                //- a.navbar-brand(href='') Små Hopp - Dagbarnvård i hemmet
-                a.navbar-brand(href='') 
-                    img(src="assets/img/homepage/smahopp_logo.png" alt="Små Hopp" height="50" )
-                //- a.btn.btn-primary(href='#signup') Kontakta oss 
-                a.btn.btn-primary(data-target='#ContactUsModal' data-toggle='modal' href='#ContactUs' data-bs-toggle='modal' data-bs-target='#ContactUsModal') Kontakta oss
+                a.navbar-brand(href='')
+                    img(src="assets/img/homepage/smahopp_logo.png" alt="Små Hopp" height="50")
+                div.ml-auto 
+                    a.btn.btn-primary(data-target='#ContactUsModal' data-toggle='modal' href='#ContactUs' data-bs-toggle='modal' data-bs-target='#ContactUsModal') Kontakta oss
+                    a.btn.btn-primary(data-target='#DocumentsModal' data-toggle='modal' href='#Documents' data-bs-toggle='modal' data-bs-target='#DocumentsModal') Dokument
+
 
         // Masthead
         header.masthead
